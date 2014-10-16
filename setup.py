@@ -31,7 +31,7 @@ setup(
     url='http://pypi.python.org/pypi/ploneintranet.docconv.client',
     license='BSD',
     packages=find_packages('src', exclude=['ez_setup']),
-    namespace_packages=['ploneintranet'],
+    namespace_packages=['ploneintranet', 'ploneintranet.docconv', ],
     package_dir={'': 'src'},
     include_package_data=True,
     zip_safe=False,
