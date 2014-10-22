@@ -1,3 +1,8 @@
+
+.. image:: https://api.travis-ci.org/ploneintranet/ploneintranet.docconv.client.png
+   :alt: Build Status
+   :target: https://travis-ci.org/ploneintranet/ploneintranet.docconv.client
+
 ============================
 ploneintranet.docconv.client
 ============================
