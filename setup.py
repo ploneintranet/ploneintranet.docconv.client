@@ -43,12 +43,14 @@ setup(
         'Plone',
         'plone.api',
         'plone.app.async',
+        'plone.app.registry',
         'setuptools',
         'z3c.jbot',
     ],
     extras_require={
         'test': [
             'mock',
+            'plone.app.contenttypes',
             'plone.app.testing',
             'unittest2',
         ],
