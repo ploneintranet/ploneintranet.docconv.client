@@ -49,6 +49,8 @@ setup(
     extras_require={
         'test': [
             'mock',
+            'plone.app.contenttypes[test]',
+            'plone.app.robotframework',
             'plone.app.testing',
             'unittest2',
         ],
