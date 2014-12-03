@@ -10,3 +10,5 @@ var
 *.pyc
 .*.sw[po]
 *.egg-info
+.coverage
+buildout-cache/
