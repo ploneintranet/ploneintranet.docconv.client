@@ -49,6 +49,7 @@ setup(
     ],
     extras_require={
         'test': [
+            'flake8',
             'mock',
             'plone.app.contenttypes[test]',
             'plone.app.robotframework',
