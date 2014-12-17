@@ -2,7 +2,7 @@
 # use `make options=-v` to run buildout with extra options
 
 python = python2.7
-options =
+options = -c dev.cfg
 
 all: docs tests
 
@@ -28,7 +28,7 @@ bin/sphinx-build: .installed.cfg
 	bin/buildout $(options)
 
 bin/buildout: bin/python buildout.cfg bootstrap.py
-	bin/python bootstrap.py
+	bin/python bootstrap.py -v 2.2.1
 	@touch $@
 
 bin/python:
