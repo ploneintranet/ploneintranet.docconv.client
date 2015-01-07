@@ -12,7 +12,22 @@ Generate previews for office documents
 * `Source code @ GitHub <https://github.com/ploneintranet/ploneintranet.docconv.client>`_
 * `Releases @ PyPI <http://pypi.python.org/pypi/ploneintranet.docconv.client>`_
 * `Documentation @ ReadTheDocs <http://ploneintranetdocconvclient.readthedocs.org>`_
-* `Continuous Integration @ Travis-CI <http://travis-ci.org/ploneintranet/ploneintranet.docconv.client>`_
+
+Build status
+------------
+
+Notification tests
+~~~~~~~~~~~~~~~~~~
+
+.. image:: http://jenkins.ploneintranet.net/buildStatus/icon?job=Plone%20Intranet%20Docconv%20Client
+    :target: http://jenkins.ploneintranet.net/job/Plone%20Intranet%20Docconv%20Client
+
+Robot tests for Plone Intranet
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. image:: http://jenkins.ploneintranet.net/buildStatus/icon?job=Plone%20Intranet%20Suite%20Master
+    :target: http://jenkins.ploneintranet.net/job/Plone%20Intranet%20Suite%20Master/badge/
+
 
 How it works
 ============
