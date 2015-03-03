@@ -37,17 +37,21 @@ setup(
     zip_safe=False,
     install_requires=[
         'BeautifulSoup',
+        'collective.celery',
         'five.grok',
         'five.pt',
         'Pillow',
         'Plone',
         'plone.api',
-        'plone.app.async',
+        'plone.app.async',  # XXX remove
         'plone.app.registry',
         'setuptools',
         'z3c.jbot',
     ],
     extras_require={
+        'local': [
+            'slc.docconv',
+        ],
         'test': [
             'flake8',
             'mock',
