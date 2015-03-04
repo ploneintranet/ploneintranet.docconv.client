@@ -38,7 +38,7 @@ setup(
     install_requires=[
         'BeautifulSoup',
         'collective.celery',
-        'collective.docconv',
+        'collective.documentviewer',
         'five.grok',
         'five.pt',
         'Pillow',
