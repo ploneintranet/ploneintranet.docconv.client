@@ -32,14 +32,14 @@ Robot tests for Plone Intranet
 How it works
 ============
 
-When a content object is added, an event handler (see handlers.py) triggers the preview generation. If plone.app.async is set up, the previews are generated asynchronously. The process relies on an external server that is running `slc.docconv <https://github.com/syslabcom/slc.docconv>`_. Upon completion the previews are stored in annotations on the object. In addition to the preview images a PDF version of the object is generated and stored. There are views in view.py that allow the previews and pdfs to be displayed.
+When a content object is added, an event handler (see handlers.py) triggers the preview generation. If plone.app.async is set up, the previews are generated asynchronously. The actual preview generation can be delegated to an external server that is running `slc.docconv <https://github.com/syslabcom/slc.docconv>`_. Alternatively it can happen locally. For local generation the package must be installed with the _local_ extra. This in turn requires `docsplit <http://documentcloud.github.com/docsplit/>`_ (and dependencies, including libreoffice for office document support) to be installed.
+Upon completion the previews are stored in annotations on the object. In addition to the preview images a PDF version of the object is generated and stored. There are views in view.py that allow the previews and pdfs to be displayed.
 
 
 Installation
 ============
 
-To install `ploneintranet.docconv.client` you simply add ``ploneintranet.docconv.client``
-to the list of eggs in your buildout, run buildout and restart Plone.
+To install `ploneintranet.docconv.client` you simply add ``ploneintranet.docconv.client`` to the list of eggs in your buildout, run buildout and restart Plone. Use ``ploneintranet.docconv.client[local]`` for local preview generation support (see above).
 Then, install `ploneintranet.docconv.client` using the Add-ons control panel.
 
 
