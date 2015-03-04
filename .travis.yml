@@ -4,7 +4,7 @@ python:
 
 before_install:
   - sudo apt-get update -qq
-  - sudo apt-get install -qq libreoffice ruby gem
+  - sudo apt-get install -qq libreoffice graphicsmagick poppler-utils poppler-data ghostscript tesseract-ocr pdftk ruby gem
   - gem install bundler
 
 install:
