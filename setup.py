@@ -42,7 +42,6 @@ setup(
         'Pillow',
         'Plone',
         'plone.api',
-        'plone.app.async',
         'plone.app.registry',
         'setuptools',
         'z3c.jbot',
