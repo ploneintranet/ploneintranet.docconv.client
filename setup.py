@@ -59,6 +59,7 @@ setup(
             'plone.app.contenttypes[test]',
             'plone.app.robotframework',
             'plone.app.testing',
+            'slc.docconv',
             'unittest2',
         ],
         'develop': [
