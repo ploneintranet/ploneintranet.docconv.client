@@ -2,9 +2,15 @@ language: python
 python:
   - 2.7
 
+before_install:
+  - sudo apt-get update -qq
+  - sudo apt-get install -qq libreoffice graphicsmagick poppler-utils poppler-data ghostscript tesseract-ocr pdftk ruby gem
+  - gem install bundler
+
 install:
   - mkdir -p buildout-cache/{eggs,downloads}
   - make options="-c travis.cfg" version=$TRAVIS_PYTHON_VERSION .installed.cfg
+  - bundle install
 
 script:
   - make tests
